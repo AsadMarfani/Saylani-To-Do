@@ -37,10 +37,11 @@ input {
 }
 button {
   cursor: pointer;
-  background-color: dodgerblue;
+  background-color: #5BC0DE;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #244c58;
   color: #eee;
+  font-weight: bold
 }

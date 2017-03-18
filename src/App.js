@@ -8,6 +8,12 @@ class App extends Component {
     super()
     this.addToDo = this.addToDo.bind(this);
   }
+componentWillMount(){
+  let refRoot = firebase.database().ref('/todos/');
+  refRoot.on('child_added',(snapshot)=>{
+      console.log(snapshot.val());
+  });
+}
   
 addToDo(e){
   e.preventDefault();
