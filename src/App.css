@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 80px;
 }
 
@@ -21,4 +21,26 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+.formContainer {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+input {
+  display: block;
+  width: 20rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+button {
+  cursor: pointer;
+  background-color: dodgerblue;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  color: #eee;
 }
